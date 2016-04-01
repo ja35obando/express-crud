@@ -1,0 +1,32 @@
+Endpoints for the team members.
+GET /team must return the list of team members
+GET /team/:member must return a specific member info
+
+
+Endpoints for Students
+Get /students must return a list of students
+Post /students must create a new student
+Put /students must update the whole student info
+Patch /students must update partial student info
+Delete /students/:student must delete a student by id or by name
+
+
+Endpoints for Notes
+Get /notes must return the notes for all students
+Get /notes/:student must return the note for a specific student
+Post /notes/:student must add a new note for a student
+Put and Patch /notes/:student must update a note for a student
+Endpoint to get all the information about the API
+Get / must return all the API information including endpoints allowed and Payloads
+
+
+Every endpoint must return the correct response code according to the HTTP protocol and if a Verb or method is not allowed it must return a proper error.
+
+For example:
+
+ 404 if the url is not found.
+ 400 if the payload format is incorrect
+ 201 for created 
+Etc…
+
+
